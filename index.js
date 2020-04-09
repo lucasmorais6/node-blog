@@ -15,6 +15,10 @@ app.use(bodyParser.urlencoded({ extended : false})) // requisições do tipo pos
 
 // ==================== FUNCTIONS ==================== //
 
+// ==================== FRONT ==================== //
+app.use(express.static(__dirname + '/client')) // tratar daqui para frente como arquivos estaticos
+//dirname resolve automaticamente o caminho de diretorios até o arquivo atual
+
 // ==================== DATABASE ==================== //
 
 // ==================== ROUTES ==================== //
@@ -26,10 +30,11 @@ app.use('/api',routes)
 
 //chegar requisições do tipo GET na barra responder como:
 
-const port = 3000
+const port = 3001
 
 app.listen(port, () =>{
     console.log("Server runing on http://localhost:3001");
 })
+
 
 // ====================================================== //

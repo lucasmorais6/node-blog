@@ -16,7 +16,11 @@
   "author": "lucasmorais6",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "proxy": "http://localhoxgt:3001/api"
 }
